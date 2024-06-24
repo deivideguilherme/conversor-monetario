@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css"> <!--Conectando o CSS-->
+
+    <title>DevClub - Convert Money</title>
+</head>
+
+<body>
+    <a href="./index.html">
+        <img class="logo" src="./assets/logo4.png" alt="logo-convert-money">
+    </a>
+    
+    <main>
+        <label>
+            Converter <b>de:</b>
+            <select class="select-from">
+                <option value="from-real">R$ Real Brasileiro</option>
+                <option value="from-dolar">US$ Dólar Americano</option>
+                <option value="from-euro">€ Euro</option>
+                <option value="from-libra">£ Libra Esterlina</option>
+                <option value="from-bitcoin">₿ Bitcoin</option>
+            </select>
+        </label>
+
+        <label>
+            Converter <b>para:</b>
+            <select class="select-to">
+                <option value="to-dolar">US$ Dólar Americano</option>
+                <option value="to-euro">€ Euro </option>
+                <option value="to-libra">£ Libra Esterlina</option>
+                <option value="to-bitcoin">₿ Bitcoin</option>
+                <option value="to-real">R$ Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Valor:
+            <input class="input-currency" placeholder="R$ 0,00">
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <section class="convertion-values">
+            <!--CONVERTER DE-->
+            <div class="currency-box">
+                <img class="currency-img-from" src="./assets/img/real.png" alt="logo-moeda-a-converter">
+                <p class="currency-name-from">Real Brasileiro</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
+            </div>
+
+            <img class="arrow-img" src="./assets/img/arrow2.png" alt="seta">
+
+            <!--CONVERTER PARA-->
+            <div class="currency-box">
+                <img class="currency-img-to" src="./assets/img/dolar.png" alt="logo-moeda-convertida">
+                <p class="currency-name-to">Dólar Americano</p>
+                <p class="currency-value-converted">$0.00</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p class="real-time-values">Cotação em: <label class="real-time-date"></label></p>
+        <p class="real-time-date"></p><br><br>
+        <label>| Dólar → </label><p class="dolar-today">   $0.00 </p><br> 
+        <label>| Euro → </label><p class="euro-today">    $0.00 </p><br>        
+        <label>| Libra → </label><p class="libra-today">   $0.00 </p><br>
+        <label>| Bitcoin → </label><p class="bitcoin-today"> $0.00 </p>
+    </footer>
+
+</body>
+
+<script src="./scripts.js"></script><!--Conectando o JAVASCRIPT-->
+
+</html>
